@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="NES_emulator" location="C:/Users/carri/ECE_385/NES_Emulator/workspace/NES_emulator" platform="C:/Users/carri/ECE_385/NES_Emulator/workspace/nes_top/export/nes_top/nes_top.xpfm" platformUID="xilinx:::0.0(custom)" systemProject="NES_emulator_system" sysConfig="nes_top" runtime="cpp" cpu="standalone_microblaze_0" cpuInstance="microblaze_0" os="standalone" mssSignature="32ca7a2e3a04a7f46834838b0cda7df6">
+  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.2002377374" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.211350701" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

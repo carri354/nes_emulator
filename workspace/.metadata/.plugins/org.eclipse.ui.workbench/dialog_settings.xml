@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="FileSystemImportWizard">
+		<item key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID" value="false"/>
+		<item key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID" value="true"/>
+		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="C:\Users\carri\ECE_385\lab6_USB_VGA\workspace\mb_usb_hdmi\src\lw_usb"/>
+			<item value="C:\Users\carri\ECE_385\lab6_USB_VGA\workspace\mb_usb_hdmi\src"/>
+			<item value="C:\Users\carri\ECE_385\lab6_2_provided\software"/>
+			<item value="C:\Users\carri\ECE_385\lab6_2_provided\software\lw_usb"/>
+		</list>
+	</section>
+</section>
