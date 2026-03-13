@@ -141,4 +141,15 @@ module nes_top(
         .Blue(blue)
     );
     
+    /*
+    clock_divider nes_clk_en(
+        .clk_21MHz(),
+        .rst(reset_ah),
+        .cpu_clk_en(),
+        .ppu_clk_en()
+    );
+    */
+    
+    
+    
 endmodule

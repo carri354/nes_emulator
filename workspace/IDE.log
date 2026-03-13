@@ -30,3 +30,27 @@
 13:52:45 INFO  : Successfully done setting XSCT server connection channel  
 13:52:45 INFO  : Successfully done query RDI_DATADIR 
 13:52:45 INFO  : Successfully done setting workspace for the tool. 
+13:53:56 DEBUG : Logs will be stored at 'C:/Users/carri/ECE_385/NES_Emulator/workspace/IDE.log'.
+13:53:56 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\carri\ECE_385\NES_Emulator\workspace\temp_xsdb_launch_script.tcl
+13:53:57 INFO  : Platform repository initialization has completed.
+13:53:58 INFO  : Registering command handlers for Vitis TCF services
+13:53:58 INFO  : XSCT server has started successfully.
+13:53:59 INFO  : plnx-install-location is set to ''
+13:53:59 INFO  : Successfully done setting XSCT server connection channel  
+13:53:59 INFO  : Successfully done query RDI_DATADIR 
+13:53:59 INFO  : Successfully done setting workspace for the tool. 
+13:54:05 INFO  : Result from executing command 'getProjects': nes_top
+13:54:05 INFO  : Result from executing command 'getPlatforms': nes_top|C:/Users/carri/ECE_385/NES_Emulator/workspace/nes_top/export/nes_top/nes_top.xpfm
+13:54:05 INFO  : Checking for BSP changes to sync application flags for project 'NES_emulator'...
+14:02:54 INFO  : Hardware specification for platform project 'nes_top' is updated.
+14:03:05 INFO  : Result from executing command 'removePlatformRepo': 
+14:03:10 INFO  : Result from executing command 'getProjects': nes_top
+14:03:10 INFO  : Result from executing command 'getPlatforms': 
+14:03:10 INFO  : Checking for BSP changes to sync application flags for project 'NES_emulator'...
+14:03:10 INFO  : Updating application flags with new BSP settings...
+14:03:11 INFO  : Successfully updated application flags for project NES_emulator.
+14:03:11 INFO  : The hardware specification used by project 'NES_emulator' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+14:03:11 INFO  : The file 'C:\Users\carri\ECE_385\NES_Emulator\workspace\NES_emulator\_ide\bitstream\mb_usb_hdmi_top.bit' stored in project is removed.
+14:03:11 INFO  : The file 'C:\Users\carri\ECE_385\NES_Emulator\workspace\NES_emulator\_ide\bitstream\mb_usb_hdmi_top.mmi' stored in project is removed.
+14:03:11 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\carri\ECE_385\NES_Emulator\workspace\NES_emulator\_ide\bitstream' in project 'NES_emulator'.
+14:03:26 INFO  : Checking for BSP changes to sync application flags for project 'NES_emulator'...
