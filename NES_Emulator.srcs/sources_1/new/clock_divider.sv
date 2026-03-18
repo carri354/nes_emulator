@@ -49,8 +49,6 @@ end
 always_ff @(posedge clk_21MHz)
 begin
     if(rst)begin
-        cpu_clk_en <= 0;
-        ppu_clk_en <= 0;
         cpu_count <= 0;
         ppu_count <= 0;
     end else begin

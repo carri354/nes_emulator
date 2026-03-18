@@ -115,6 +115,8 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
+set_msg_config  -id {Synth 8-87}  -new_severity {ERROR} 
+set_msg_config  -id {Synth 8-327}  -new_severity {ERROR} 
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }

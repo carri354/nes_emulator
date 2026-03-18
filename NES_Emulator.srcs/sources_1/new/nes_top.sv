@@ -35,15 +35,27 @@ module nes_top(
     output logic [3:0] hex_gridB
 );
     
+    // USB and clocks
     logic [31:0] keycode0_gpio, keycode1_gpio;
-    logic clk_25MHz, clk_125MHz, clk, clk_100MHz;
+    logic clk_25MHz, clk_125MHz, clk, clk_100MHz, clk_21MHz;
     logic locked;
-    logic [9:0] drawX, drawY, ballxsig, ballysig, ballsizesig;
-
+    
+    
+    // HDMI
     logic hsync, vsync, vde;
     logic [3:0] red, green, blue;
-    logic reset_ah;
+    logic [9:0] drawX, drawY, ballxsig, ballysig, ballsizesig;
     
+    // CPU
+    logic [15:0]cpu_address_bus;
+    logic [7:0]cpu_read_bus, cpu_write_bus;
+    logic cpu_clk_en;
+    logic cpu_we;
+    logic cpu_irq;
+    logic cpu_nmi;
+    
+    // Reset
+    logic reset_ah;
     assign reset_ah = reset_rtl_0;
     
     
@@ -83,6 +95,7 @@ module nes_top(
     clk_wiz_0 clk_wiz (
         .clk_out1(clk_25MHz),
         .clk_out2(clk_125MHz),
+        .clk_out3(clk_21MHz),
         .reset(reset_ah),
         .locked(locked),
         .clk_in1(Clk)
@@ -128,8 +141,11 @@ module nes_top(
     );
 
     
-    
+    /*
     //Color Mapper Module   
+    assign ballsizesig = 16;
+    assign ballxsig = 20;
+    assign ballysig = 20;
     color_mapper color_instance(
         .BallX(ballxsig),
         .BallY(ballysig),
@@ -140,13 +156,45 @@ module nes_top(
         .Green(green),
         .Blue(blue)
     );
-    
+    */
     /*
+    cpu_6502 nes_cpu(
+        .clk(clk_21MHz);              
+        .reset(reset_ah);            
+        .AB(cpu_address_bus);      // address bus
+        // MAKE SURE TO IMPLEMENT MUX LOGIC FOR READ BUS
+        .DI(cpu_read_bus);         // data in, read bus
+        .DO(cpu_write_bus);         // data out, write bus
+        .WE(cpu_we);               // write enable
+        .IRQ(cpu_irq);             // interrupt request
+        .NMI(cpu_nmi);             // non-maskable interrupt request
+        .RDY(cpu_clk_en);          // Ready signal. Pauses CPU when RDY=0 
+    );
+    
     clock_divider nes_clk_en(
         .clk_21MHz(),
         .rst(reset_ah),
         .cpu_clk_en(),
         .ppu_clk_en()
+    );
+    
+    ppu nes_ppu(
+        .nes_clk(clk_21MHz),
+        .vga_clk(clk_25MHz),
+        .en(ppu_clk_en),
+        .rst(reset_ah),
+        
+        .data_i(cpu_write_bus),
+        .address_i(cpu_address_bus[2:0]),
+        
+        .ppu_red(red),
+        .ppu_green(green),
+        .ppu_blue(blue),
+        .nmi(cpu_nmi),
+        
+        .ppu_data_o(ppu_data_o),
+        .ppu_vram_addr(vram_addr)
+        
     );
     */
     

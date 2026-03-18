@@ -1,26 +1,28 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
+// Company: UIUC
+// Engineer: Carlos Arriola
 // 
-// Create Date: 03/12/2026 10:11:30 PM
-// Design Name: 
+// Create Date: 03/18/2026 11:30:27 AM
 // Module Name: ppu
-// Project Name: 
-// Target Devices: 
 // Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
+// Description: Generates color signals to be displayed on monitor
+//              
 //////////////////////////////////////////////////////////////////////////////////
 
 
 module ppu(
-
+// nes_clk = 21MHz, vga_clk = 25MHz. PPU runs at 21MHz but must sync to 25MHz for vga signal
+    input logic nes_clk, vga_clk, 
+    input logic en, rst,
+    input logic [7:0] data_i,   // Incoming data
+    input logic [2:0] addr_i,   // Address to access (one of 8 registers)
+    
+    output logic [3:0] ppu_red, ppu_blue, ppu_green,
+    output logic nmi, vblank,
+    output logic [7:0] ppu_data_o,
+    output logic [12:0] ppu_vram_addr
+    
+    
     );
 endmodule
