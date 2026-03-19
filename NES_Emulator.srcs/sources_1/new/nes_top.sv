@@ -46,13 +46,7 @@ module nes_top(
     logic [3:0] red, green, blue;
     logic [9:0] drawX, drawY, ballxsig, ballysig, ballsizesig;
     
-    // CPU
-    logic [15:0]cpu_address_bus;
-    logic [7:0]cpu_read_bus, cpu_write_bus;
-    logic cpu_clk_en;
-    logic cpu_we;
-    logic cpu_irq;
-    logic cpu_nmi;
+   
     
     // Reset
     logic reset_ah;
@@ -157,44 +151,23 @@ module nes_top(
         .Blue(blue)
     );
     */
+    
     /*
-    cpu_6502 nes_cpu(
-        .clk(clk_21MHz);              
-        .reset(reset_ah);            
-        .AB(cpu_address_bus);      // address bus
-        // MAKE SURE TO IMPLEMENT MUX LOGIC FOR READ BUS
-        .DI(cpu_read_bus);         // data in, read bus
-        .DO(cpu_write_bus);         // data out, write bus
-        .WE(cpu_we);               // write enable
-        .IRQ(cpu_irq);             // interrupt request
-        .NMI(cpu_nmi);             // non-maskable interrupt request
-        .RDY(cpu_clk_en);          // Ready signal. Pauses CPU when RDY=0 
+    console nes(
+        .clk_21MHz(clk_21MHz),
+        .clk_25MHz(clk_25_MHz),
+        .reset(reset_ah),
+        
+        .key0(keycode0_gpio),
+        .key1(keycode1_gpio),
+        
+        .red(red),
+        .green(green),
+        .blue(blue)
     );
     
-    clock_divider nes_clk_en(
-        .clk_21MHz(),
-        .rst(reset_ah),
-        .cpu_clk_en(),
-        .ppu_clk_en()
-    );
+    cartridge game_cartridge(
     
-    ppu nes_ppu(
-        .nes_clk(clk_21MHz),
-        .vga_clk(clk_25MHz),
-        .en(ppu_clk_en),
-        .rst(reset_ah),
-        
-        .data_i(cpu_write_bus),
-        .address_i(cpu_address_bus[2:0]),
-        
-        .ppu_red(red),
-        .ppu_green(green),
-        .ppu_blue(blue),
-        .nmi(cpu_nmi),
-        
-        .ppu_data_o(ppu_data_o),
-        .ppu_vram_addr(vram_addr)
-        
     );
     */
     
