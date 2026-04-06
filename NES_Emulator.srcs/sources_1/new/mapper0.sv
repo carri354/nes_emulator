@@ -20,7 +20,19 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module mapper0(
+module mapper0( input  logic [9:0] DrawX, DrawY,
+                       output logic [3:0]  Red, Green, Blue
+);
 
-    );
+ always_comb
+    begin:RGB_Display
+        
+            Red = 4'hf - DrawX[9:6]; 
+            Green = 4'hf - DrawX[9:6];
+            Blue = 4'hf - DrawX[9:6];
+              
+    end 
+    
+    
+    
 endmodule

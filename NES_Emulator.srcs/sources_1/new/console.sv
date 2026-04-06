@@ -21,7 +21,7 @@
 
 
 module console(
-    input logic clk_21MHz, clk_25_MHz,
+    input logic clk_25_MHz,
     input logic reset,
     input logic [31:0]key0, key1,
     
@@ -43,18 +43,6 @@ module console(
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     /*
     cpu_6502 nes_cpu(
         .clk(clk_21MHz);              
@@ -70,15 +58,14 @@ module console(
     );
     
     clock_divider nes_clk_en(
-        .clk_21MHz(clk_21MHz),
+        .clk(clk_25MHz),
         .rst(reset),
         .cpu_clk_en(cpu_clk_en),
         .ppu_clk_en(ppu_clk_en)
     );
     
     ppu nes_ppu(
-        .nes_clk(clk_21MHz),
-        .vga_clk(clk_25MHz),
+        .nes_clk(clk_25MHz),
         .en(ppu_clk_en),
         .rst(reset),
         

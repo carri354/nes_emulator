@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 6
 set_msg_config  -id {Synth 8-87}  -new_severity {ERROR} 
 set_msg_config  -id {Synth 8-327}  -new_severity {ERROR} 
 OPTRACE "Creating in-memory project" START { }
@@ -91,9 +92,11 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib -sv {
-  C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.srcs/sources_1/imports/design_source/Color_Mapper.sv
   C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.srcs/sources_1/imports/design_source/VGA_controller.sv
+  C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.srcs/sources_1/new/cartridge.sv
   C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.srcs/sources_1/imports/design_source/hex_driver.sv
+  C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.srcs/sources_1/new/mapper0.sv
+  C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.srcs/sources_1/new/mapper2.sv
   C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.srcs/sources_1/new/nes_top.sv
 }
 add_files C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.srcs/sources_1/bd/mb_unit/mb_unit.bd

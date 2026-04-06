@@ -12,8 +12,8 @@
 
 
 module ppu(
-// nes_clk = 21MHz, vga_clk = 25MHz. PPU runs at 21MHz but must sync to 25MHz for vga signal
-    input logic nes_clk, vga_clk, 
+// nes_clk = 25MHz, same as VGA signal
+    input logic nes_clk, cpu_we,
     input logic en, rst,
     input logic [7:0] data_i,   // Incoming data
     input logic [2:0] addr_i,   // Address to access (one of 8 registers)
@@ -25,4 +25,10 @@ module ppu(
     
     
     );
+    
+    // Control registers https://www.nesdev.org/wiki/PPU_registers
+    logic [7:0] ppu_ctrl, ppu_mask, ppu_status, oam_addr, ppu_scroll, ppu_data;
+    
+    
+    
 endmodule

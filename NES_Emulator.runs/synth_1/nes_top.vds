@@ -2,8 +2,8 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Fri Mar 13 10:19:15 2026
-# Process ID: 12648
+# Start of session at: Fri Apr  3 16:56:31 2026
+# Process ID: 11228
 # Current directory: C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1
 # Command line: vivado.exe -log nes_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source nes_top.tcl
 # Log file: C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/nes_top.vds
@@ -26,10 +26,10 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 16880
+INFO: [Synth 8-7075] Helper process launched with PID 15376
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1221.133 ; gain = 406.879
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1220.934 ; gain = 408.789
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'nes_top' [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.srcs/sources_1/new/nes_top.sv:9]
 INFO: [Synth 8-6157] synthesizing module 'hex_driver' [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.srcs/sources_1/imports/design_source/hex_driver.sv:1]
@@ -43,22 +43,22 @@ INFO: [Synth 8-6157] synthesizing module 'nibble_to_hex' [C:/Users/carri/ECE_385
 INFO: [Synth 8-6155] done synthesizing module 'nibble_to_hex' (0#1) [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.srcs/sources_1/imports/design_source/hex_driver.sv:11]
 INFO: [Synth 8-6155] done synthesizing module 'hex_driver' (0#1) [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.srcs/sources_1/imports/design_source/hex_driver.sv:1]
 INFO: [Synth 8-6157] synthesizing module 'mb_unit' [c:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.gen/sources_1/bd/mb_unit/synth/mb_unit.v:936]
-INFO: [Synth 8-6157] synthesizing module 'mb_unit_axi_uartlite_0_0' [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-12648-LAPTOP-2QU67J4E/realtime/mb_unit_axi_uartlite_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_unit_axi_uartlite_0_0' (0#1) [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-12648-LAPTOP-2QU67J4E/realtime/mb_unit_axi_uartlite_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_unit_clk_wiz_1_0' [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-12648-LAPTOP-2QU67J4E/realtime/mb_unit_clk_wiz_1_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_unit_clk_wiz_1_0' (0#1) [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-12648-LAPTOP-2QU67J4E/realtime/mb_unit_clk_wiz_1_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_unit_axi_gpio_0_0' [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-12648-LAPTOP-2QU67J4E/realtime/mb_unit_axi_gpio_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_unit_axi_gpio_0_0' (0#1) [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-12648-LAPTOP-2QU67J4E/realtime/mb_unit_axi_gpio_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_unit_axi_gpio_0_2' [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-12648-LAPTOP-2QU67J4E/realtime/mb_unit_axi_gpio_0_2_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_unit_axi_gpio_0_2' (0#1) [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-12648-LAPTOP-2QU67J4E/realtime/mb_unit_axi_gpio_0_2_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_unit_axi_gpio_0_1' [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-12648-LAPTOP-2QU67J4E/realtime/mb_unit_axi_gpio_0_1_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_unit_axi_gpio_0_1' (0#1) [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-12648-LAPTOP-2QU67J4E/realtime/mb_unit_axi_gpio_0_1_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_unit_mdm_1_0' [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-12648-LAPTOP-2QU67J4E/realtime/mb_unit_mdm_1_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_unit_mdm_1_0' (0#1) [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-12648-LAPTOP-2QU67J4E/realtime/mb_unit_mdm_1_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_unit_microblaze_0_0' [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-12648-LAPTOP-2QU67J4E/realtime/mb_unit_microblaze_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_unit_microblaze_0_0' (0#1) [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-12648-LAPTOP-2QU67J4E/realtime/mb_unit_microblaze_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_unit_microblaze_0_axi_intc_0' [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-12648-LAPTOP-2QU67J4E/realtime/mb_unit_microblaze_0_axi_intc_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_unit_microblaze_0_axi_intc_0' (0#1) [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-12648-LAPTOP-2QU67J4E/realtime/mb_unit_microblaze_0_axi_intc_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_unit_axi_uartlite_0_0' [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-11228-LAPTOP-2QU67J4E/realtime/mb_unit_axi_uartlite_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_unit_axi_uartlite_0_0' (0#1) [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-11228-LAPTOP-2QU67J4E/realtime/mb_unit_axi_uartlite_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_unit_clk_wiz_1_0' [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-11228-LAPTOP-2QU67J4E/realtime/mb_unit_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_unit_clk_wiz_1_0' (0#1) [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-11228-LAPTOP-2QU67J4E/realtime/mb_unit_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_unit_axi_gpio_0_0' [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-11228-LAPTOP-2QU67J4E/realtime/mb_unit_axi_gpio_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_unit_axi_gpio_0_0' (0#1) [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-11228-LAPTOP-2QU67J4E/realtime/mb_unit_axi_gpio_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_unit_axi_gpio_0_2' [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-11228-LAPTOP-2QU67J4E/realtime/mb_unit_axi_gpio_0_2_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_unit_axi_gpio_0_2' (0#1) [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-11228-LAPTOP-2QU67J4E/realtime/mb_unit_axi_gpio_0_2_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_unit_axi_gpio_0_1' [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-11228-LAPTOP-2QU67J4E/realtime/mb_unit_axi_gpio_0_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_unit_axi_gpio_0_1' (0#1) [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-11228-LAPTOP-2QU67J4E/realtime/mb_unit_axi_gpio_0_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_unit_mdm_1_0' [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-11228-LAPTOP-2QU67J4E/realtime/mb_unit_mdm_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_unit_mdm_1_0' (0#1) [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-11228-LAPTOP-2QU67J4E/realtime/mb_unit_mdm_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_unit_microblaze_0_0' [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-11228-LAPTOP-2QU67J4E/realtime/mb_unit_microblaze_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_unit_microblaze_0_0' (0#1) [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-11228-LAPTOP-2QU67J4E/realtime/mb_unit_microblaze_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_unit_microblaze_0_axi_intc_0' [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-11228-LAPTOP-2QU67J4E/realtime/mb_unit_microblaze_0_axi_intc_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_unit_microblaze_0_axi_intc_0' (0#1) [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-11228-LAPTOP-2QU67J4E/realtime/mb_unit_microblaze_0_axi_intc_0_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'mb_unit_microblaze_0_axi_periph_0' [c:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.gen/sources_1/bd/mb_unit/synth/mb_unit.v:1602]
 INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_DGCHVP' [c:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.gen/sources_1/bd/mb_unit/synth/mb_unit.v:12]
 INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_DGCHVP' (0#1) [c:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.gen/sources_1/bd/mb_unit/synth/mb_unit.v:12]
@@ -76,27 +76,27 @@ INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_15Z6MJ1' [c:/Users/ca
 INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_15Z6MJ1' (0#1) [c:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.gen/sources_1/bd/mb_unit/synth/mb_unit.v:804]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1EUIYAH' [c:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.gen/sources_1/bd/mb_unit/synth/mb_unit.v:2926]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1EUIYAH' (0#1) [c:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.gen/sources_1/bd/mb_unit/synth/mb_unit.v:2926]
-INFO: [Synth 8-6157] synthesizing module 'mb_unit_xbar_0' [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-12648-LAPTOP-2QU67J4E/realtime/mb_unit_xbar_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_unit_xbar_0' (0#1) [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-12648-LAPTOP-2QU67J4E/realtime/mb_unit_xbar_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_unit_xbar_0' [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-11228-LAPTOP-2QU67J4E/realtime/mb_unit_xbar_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_unit_xbar_0' (0#1) [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-11228-LAPTOP-2QU67J4E/realtime/mb_unit_xbar_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'mb_unit_xbar_0' is unconnected for instance 'xbar' [c:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.gen/sources_1/bd/mb_unit/synth/mb_unit.v:2651]
 WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'mb_unit_xbar_0' is unconnected for instance 'xbar' [c:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.gen/sources_1/bd/mb_unit/synth/mb_unit.v:2651]
 WARNING: [Synth 8-7023] instance 'xbar' of module 'mb_unit_xbar_0' has 40 connections declared, but only 38 given [c:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.gen/sources_1/bd/mb_unit/synth/mb_unit.v:2651]
 INFO: [Synth 8-6155] done synthesizing module 'mb_unit_microblaze_0_axi_periph_0' (0#1) [c:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.gen/sources_1/bd/mb_unit/synth/mb_unit.v:1602]
 INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_14XBYN9' [c:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.gen/sources_1/bd/mb_unit/synth/mb_unit.v:2692]
-INFO: [Synth 8-6157] synthesizing module 'mb_unit_dlmb_bram_if_cntlr_0' [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-12648-LAPTOP-2QU67J4E/realtime/mb_unit_dlmb_bram_if_cntlr_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_unit_dlmb_bram_if_cntlr_0' (0#1) [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-12648-LAPTOP-2QU67J4E/realtime/mb_unit_dlmb_bram_if_cntlr_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_unit_dlmb_v10_0' [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-12648-LAPTOP-2QU67J4E/realtime/mb_unit_dlmb_v10_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_unit_dlmb_v10_0' (0#1) [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-12648-LAPTOP-2QU67J4E/realtime/mb_unit_dlmb_v10_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_unit_dlmb_bram_if_cntlr_0' [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-11228-LAPTOP-2QU67J4E/realtime/mb_unit_dlmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_unit_dlmb_bram_if_cntlr_0' (0#1) [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-11228-LAPTOP-2QU67J4E/realtime/mb_unit_dlmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_unit_dlmb_v10_0' [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-11228-LAPTOP-2QU67J4E/realtime/mb_unit_dlmb_v10_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_unit_dlmb_v10_0' (0#1) [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-11228-LAPTOP-2QU67J4E/realtime/mb_unit_dlmb_v10_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'mb_unit_dlmb_v10_0' is unconnected for instance 'dlmb_v10' [c:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.gen/sources_1/bd/mb_unit/synth/mb_unit.v:2838]
 WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'mb_unit_dlmb_v10_0' has 25 connections declared, but only 24 given [c:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.gen/sources_1/bd/mb_unit/synth/mb_unit.v:2838]
-INFO: [Synth 8-6157] synthesizing module 'mb_unit_ilmb_bram_if_cntlr_0' [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-12648-LAPTOP-2QU67J4E/realtime/mb_unit_ilmb_bram_if_cntlr_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_unit_ilmb_bram_if_cntlr_0' (0#1) [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-12648-LAPTOP-2QU67J4E/realtime/mb_unit_ilmb_bram_if_cntlr_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_unit_ilmb_v10_0' [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-12648-LAPTOP-2QU67J4E/realtime/mb_unit_ilmb_v10_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_unit_ilmb_v10_0' (0#1) [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-12648-LAPTOP-2QU67J4E/realtime/mb_unit_ilmb_v10_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_unit_ilmb_bram_if_cntlr_0' [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-11228-LAPTOP-2QU67J4E/realtime/mb_unit_ilmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_unit_ilmb_bram_if_cntlr_0' (0#1) [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-11228-LAPTOP-2QU67J4E/realtime/mb_unit_ilmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_unit_ilmb_v10_0' [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-11228-LAPTOP-2QU67J4E/realtime/mb_unit_ilmb_v10_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_unit_ilmb_v10_0' (0#1) [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-11228-LAPTOP-2QU67J4E/realtime/mb_unit_ilmb_v10_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'mb_unit_ilmb_v10_0' is unconnected for instance 'ilmb_v10' [c:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.gen/sources_1/bd/mb_unit/synth/mb_unit.v:2884]
 WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'mb_unit_ilmb_v10_0' has 25 connections declared, but only 24 given [c:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.gen/sources_1/bd/mb_unit/synth/mb_unit.v:2884]
-INFO: [Synth 8-6157] synthesizing module 'mb_unit_lmb_bram_0' [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-12648-LAPTOP-2QU67J4E/realtime/mb_unit_lmb_bram_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_unit_lmb_bram_0' (0#1) [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-12648-LAPTOP-2QU67J4E/realtime/mb_unit_lmb_bram_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_unit_lmb_bram_0' [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-11228-LAPTOP-2QU67J4E/realtime/mb_unit_lmb_bram_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_unit_lmb_bram_0' (0#1) [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-11228-LAPTOP-2QU67J4E/realtime/mb_unit_lmb_bram_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'rsta_busy' of module 'mb_unit_lmb_bram_0' is unconnected for instance 'lmb_bram' [c:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.gen/sources_1/bd/mb_unit/synth/mb_unit.v:2909]
 WARNING: [Synth 8-7071] port 'rstb_busy' of module 'mb_unit_lmb_bram_0' is unconnected for instance 'lmb_bram' [c:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.gen/sources_1/bd/mb_unit/synth/mb_unit.v:2909]
 WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'mb_unit_lmb_bram_0' has 16 connections declared, but only 14 given [c:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.gen/sources_1/bd/mb_unit/synth/mb_unit.v:2909]
@@ -105,37 +105,73 @@ INFO: [Synth 8-6157] synthesizing module 'mb_unit_microblaze_0_xlconcat_0' [c:/U
 INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [c:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.gen/sources_1/bd/mb_unit/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
 INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (0#1) [c:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.gen/sources_1/bd/mb_unit/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
 INFO: [Synth 8-6155] done synthesizing module 'mb_unit_microblaze_0_xlconcat_0' (0#1) [c:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.gen/sources_1/bd/mb_unit/ip/mb_unit_microblaze_0_xlconcat_0/synth/mb_unit_microblaze_0_xlconcat_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'mb_unit_rst_clk_wiz_1_100M_0' [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-12648-LAPTOP-2QU67J4E/realtime/mb_unit_rst_clk_wiz_1_100M_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_unit_rst_clk_wiz_1_100M_0' (0#1) [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-12648-LAPTOP-2QU67J4E/realtime/mb_unit_rst_clk_wiz_1_100M_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_unit_rst_clk_wiz_1_100M_0' [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-11228-LAPTOP-2QU67J4E/realtime/mb_unit_rst_clk_wiz_1_100M_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_unit_rst_clk_wiz_1_100M_0' (0#1) [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-11228-LAPTOP-2QU67J4E/realtime/mb_unit_rst_clk_wiz_1_100M_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'mb_unit_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [c:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.gen/sources_1/bd/mb_unit/synth/mb_unit.v:1538]
 WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'mb_unit_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [c:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.gen/sources_1/bd/mb_unit/synth/mb_unit.v:1538]
 WARNING: [Synth 8-7023] instance 'rst_clk_wiz_1_100M' of module 'mb_unit_rst_clk_wiz_1_100M_0' has 10 connections declared, but only 8 given [c:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.gen/sources_1/bd/mb_unit/synth/mb_unit.v:1538]
-INFO: [Synth 8-6157] synthesizing module 'mb_unit_axi_quad_spi_0_0' [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-12648-LAPTOP-2QU67J4E/realtime/mb_unit_axi_quad_spi_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_unit_axi_quad_spi_0_0' (0#1) [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-12648-LAPTOP-2QU67J4E/realtime/mb_unit_axi_quad_spi_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_unit_axi_quad_spi_0_0' [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-11228-LAPTOP-2QU67J4E/realtime/mb_unit_axi_quad_spi_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_unit_axi_quad_spi_0_0' (0#1) [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-11228-LAPTOP-2QU67J4E/realtime/mb_unit_axi_quad_spi_0_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'io0_t' of module 'mb_unit_axi_quad_spi_0_0' is unconnected for instance 'spi_usb' [c:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.gen/sources_1/bd/mb_unit/synth/mb_unit.v:1547]
 WARNING: [Synth 8-7071] port 'io1_o' of module 'mb_unit_axi_quad_spi_0_0' is unconnected for instance 'spi_usb' [c:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.gen/sources_1/bd/mb_unit/synth/mb_unit.v:1547]
 WARNING: [Synth 8-7071] port 'io1_t' of module 'mb_unit_axi_quad_spi_0_0' is unconnected for instance 'spi_usb' [c:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.gen/sources_1/bd/mb_unit/synth/mb_unit.v:1547]
 WARNING: [Synth 8-7071] port 'sck_t' of module 'mb_unit_axi_quad_spi_0_0' is unconnected for instance 'spi_usb' [c:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.gen/sources_1/bd/mb_unit/synth/mb_unit.v:1547]
 WARNING: [Synth 8-7071] port 'ss_t' of module 'mb_unit_axi_quad_spi_0_0' is unconnected for instance 'spi_usb' [c:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.gen/sources_1/bd/mb_unit/synth/mb_unit.v:1547]
 WARNING: [Synth 8-7023] instance 'spi_usb' of module 'mb_unit_axi_quad_spi_0_0' has 33 connections declared, but only 28 given [c:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.gen/sources_1/bd/mb_unit/synth/mb_unit.v:1547]
-INFO: [Synth 8-6157] synthesizing module 'mb_unit_axi_timer_0_0' [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-12648-LAPTOP-2QU67J4E/realtime/mb_unit_axi_timer_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_unit_axi_timer_0_0' (0#1) [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-12648-LAPTOP-2QU67J4E/realtime/mb_unit_axi_timer_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_unit_axi_timer_0_0' [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-11228-LAPTOP-2QU67J4E/realtime/mb_unit_axi_timer_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_unit_axi_timer_0_0' (0#1) [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-11228-LAPTOP-2QU67J4E/realtime/mb_unit_axi_timer_0_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'generateout0' of module 'mb_unit_axi_timer_0_0' is unconnected for instance 'timer_usb_axi' [c:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.gen/sources_1/bd/mb_unit/synth/mb_unit.v:1576]
 WARNING: [Synth 8-7071] port 'generateout1' of module 'mb_unit_axi_timer_0_0' is unconnected for instance 'timer_usb_axi' [c:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.gen/sources_1/bd/mb_unit/synth/mb_unit.v:1576]
 WARNING: [Synth 8-7071] port 'interrupt' of module 'mb_unit_axi_timer_0_0' is unconnected for instance 'timer_usb_axi' [c:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.gen/sources_1/bd/mb_unit/synth/mb_unit.v:1576]
 WARNING: [Synth 8-7023] instance 'timer_usb_axi' of module 'mb_unit_axi_timer_0_0' has 26 connections declared, but only 23 given [c:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.gen/sources_1/bd/mb_unit/synth/mb_unit.v:1576]
 INFO: [Synth 8-6155] done synthesizing module 'mb_unit' (0#1) [c:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.gen/sources_1/bd/mb_unit/synth/mb_unit.v:936]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-12648-LAPTOP-2QU67J4E/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-12648-LAPTOP-2QU67J4E/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-11228-LAPTOP-2QU67J4E/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-11228-LAPTOP-2QU67J4E/realtime/clk_wiz_0_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'vga_controller' [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.srcs/sources_1/imports/design_source/VGA_controller.sv:26]
 INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (0#1) [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.srcs/sources_1/imports/design_source/VGA_controller.sv:26]
-WARNING: [Synth 8-7071] port 'sync' of module 'vga_controller' is unconnected for instance 'vga' [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.srcs/sources_1/new/nes_top.sv:92]
-WARNING: [Synth 8-7023] instance 'vga' of module 'vga_controller' has 8 connections declared, but only 7 given [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.srcs/sources_1/new/nes_top.sv:92]
-INFO: [Synth 8-6157] synthesizing module 'hdmi_tx_0' [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-12648-LAPTOP-2QU67J4E/realtime/hdmi_tx_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'hdmi_tx_0' (0#1) [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-12648-LAPTOP-2QU67J4E/realtime/hdmi_tx_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'color_mapper' [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.srcs/sources_1/imports/design_source/Color_Mapper.sv:17]
-INFO: [Synth 8-6155] done synthesizing module 'color_mapper' (0#1) [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.srcs/sources_1/imports/design_source/Color_Mapper.sv:17]
+WARNING: [Synth 8-7071] port 'sync' of module 'vga_controller' is unconnected for instance 'vga' [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.srcs/sources_1/new/nes_top.sv:103]
+WARNING: [Synth 8-7023] instance 'vga' of module 'vga_controller' has 8 connections declared, but only 7 given [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.srcs/sources_1/new/nes_top.sv:103]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_tx_0' [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-11228-LAPTOP-2QU67J4E/realtime/hdmi_tx_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_tx_0' (0#1) [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/.Xil/Vivado-11228-LAPTOP-2QU67J4E/realtime/hdmi_tx_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'cartridge' [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.srcs/sources_1/new/cartridge.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mapper0' [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.srcs/sources_1/new/mapper0.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mapper0' (0#1) [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.srcs/sources_1/new/mapper0.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mapper2' [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.srcs/sources_1/new/mapper2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mapper2' (0#1) [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.srcs/sources_1/new/mapper2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'cartridge' (0#1) [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.srcs/sources_1/new/cartridge.sv:23]
 INFO: [Synth 8-6155] done synthesizing module 'nes_top' (0#1) [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.srcs/sources_1/new/nes_top.sv:9]
+WARNING: [Synth 8-7129] Port DrawX[5] in module mapper2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DrawX[4] in module mapper2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DrawX[3] in module mapper2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DrawX[2] in module mapper2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DrawX[1] in module mapper2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DrawX[0] in module mapper2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DrawY[9] in module mapper2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DrawY[8] in module mapper2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DrawY[7] in module mapper2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DrawY[6] in module mapper2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DrawY[5] in module mapper2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DrawY[4] in module mapper2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DrawY[3] in module mapper2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DrawY[2] in module mapper2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DrawY[1] in module mapper2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DrawY[0] in module mapper2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DrawX[5] in module mapper0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DrawX[4] in module mapper0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DrawX[3] in module mapper0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DrawX[2] in module mapper0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DrawX[1] in module mapper0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DrawX[0] in module mapper0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DrawY[9] in module mapper0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DrawY[8] in module mapper0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DrawY[7] in module mapper0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DrawY[6] in module mapper0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DrawY[5] in module mapper0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DrawY[4] in module mapper0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DrawY[3] in module mapper0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DrawY[2] in module mapper0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DrawY[1] in module mapper0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DrawY[0] in module mapper0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port In4[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
 WARNING: [Synth 8-7129] Port In5[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
 WARNING: [Synth 8-7129] Port In6[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
@@ -204,52 +240,20 @@ WARNING: [Synth 8-7129] Port In68[0] in module xlconcat_v2_1_4_xlconcat is eithe
 WARNING: [Synth 8-7129] Port In69[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
 WARNING: [Synth 8-7129] Port In70[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
 WARNING: [Synth 8-7129] Port In71[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In72[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In73[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In74[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In75[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In76[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In77[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In78[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In79[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In80[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In81[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In82[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In83[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In84[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In85[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In86[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In87[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In88[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In89[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In90[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In91[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In92[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In93[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In94[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In95[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In96[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In97[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In98[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In99[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In100[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In101[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In102[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In103[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1325.652 ; gain = 511.398
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1325.180 ; gain = 513.035
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1325.652 ; gain = 511.398
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1325.180 ; gain = 513.035
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1325.652 ; gain = 511.398
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1325.180 ; gain = 513.035
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1325.652 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1325.180 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -305,31 +309,31 @@ Parsing XDC File [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/
 Finished Parsing XDC File [C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1390.168 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1370.336 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1390.168 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1370.336 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'mb_block_i/spi_usb' at clock pin 'ext_spi_clk' is different from the actual clock period '10.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'mb_block_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1390.180 ; gain = 575.926
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1372.035 ; gain = 559.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7s50csga324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1390.180 ; gain = 575.926
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1372.035 ; gain = 559.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for Clk. (constraint file  c:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for Clk. (constraint file  c:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for Clk. (constraint file  c:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for Clk. (constraint file  c:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 6).
 Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_clk_n. (constraint file  c:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 1).
 Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_clk_n. (constraint file  c:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 2).
 Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_clk_p. (constraint file  c:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 3).
@@ -369,25 +373,21 @@ Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/timer_usb_axi. (constr
 Applied set_property KEEP_HIERARCHY = SOFT for clk_wiz. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for vga_to_hdmi. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1390.180 ; gain = 575.926
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1372.035 ; gain = 559.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1390.180 ; gain = 575.926
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1372.035 ; gain = 559.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   3 Input   32 Bit       Adders := 2     
-	   2 Input   32 Bit       Adders := 1     
 	   2 Input   11 Bit       Adders := 2     
 	   2 Input   10 Bit       Adders := 2     
 +---Registers : 
 	               10 Bit    Registers := 2     
-	                1 Bit    Registers := 2     
-+---Multipliers : 
-	              32x32  Multipliers := 2     
+	                1 Bit    Registers := 3     
 +---Muxes : 
 	   4 Input    8 Bit        Muxes := 2     
 	   2 Input    8 Bit        Muxes := 2     
@@ -409,75 +409,29 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-DSP Report: Generating DSP color_instance/Red3, operation Mode is: A*B.
-DSP Report: operator color_instance/Red3 is absorbed into DSP color_instance/Red3.
-DSP Report: operator color_instance/Red3 is absorbed into DSP color_instance/Red3.
-DSP Report: Generating DSP color_instance/Red3, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator color_instance/Red3 is absorbed into DSP color_instance/Red3.
-DSP Report: operator color_instance/Red3 is absorbed into DSP color_instance/Red3.
-DSP Report: Generating DSP color_instance/Red3, operation Mode is: A*B.
-DSP Report: operator color_instance/Red3 is absorbed into DSP color_instance/Red3.
-DSP Report: operator color_instance/Red3 is absorbed into DSP color_instance/Red3.
-DSP Report: Generating DSP color_instance/Red3, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator color_instance/Red3 is absorbed into DSP color_instance/Red3.
-DSP Report: operator color_instance/Red3 is absorbed into DSP color_instance/Red3.
-DSP Report: Generating DSP color_instance/Red3, operation Mode is: A*B.
-DSP Report: operator color_instance/Red3 is absorbed into DSP color_instance/Red3.
-DSP Report: operator color_instance/Red3 is absorbed into DSP color_instance/Red3.
-DSP Report: Generating DSP color_instance/Red3, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator color_instance/Red3 is absorbed into DSP color_instance/Red3.
-DSP Report: operator color_instance/Red3 is absorbed into DSP color_instance/Red3.
-DSP Report: Generating DSP color_instance/Red3, operation Mode is: A*B.
-DSP Report: operator color_instance/Red3 is absorbed into DSP color_instance/Red3.
-DSP Report: operator color_instance/Red3 is absorbed into DSP color_instance/Red3.
-DSP Report: Generating DSP color_instance/Red3, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator color_instance/Red3 is absorbed into DSP color_instance/Red3.
-DSP Report: operator color_instance/Red3 is absorbed into DSP color_instance/Red3.
 WARNING: [Synth 8-3917] design nes_top has port hex_segA[7] driven by constant 1
 WARNING: [Synth 8-3917] design nes_top has port hex_segB[7] driven by constant 1
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1390.180 ; gain = 575.926
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start ROM, RAM, DSP, Shift Register and Retiming Reporting
----------------------------------------------------------------------------------
-
-DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
-+------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
-+------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|nes_top     | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|nes_top     | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|nes_top     | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|nes_top     | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|nes_top     | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|nes_top     | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|nes_top     | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|nes_top     | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-+------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-
-Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
----------------------------------------------------------------------------------
-Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1372.035 ; gain = 559.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-565] redefining clock 'Clk'
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1390.180 ; gain = 575.926
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1372.035 ; gain = 559.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1390.180 ; gain = 575.926
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1372.035 ; gain = 559.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1390.180 ; gain = 575.926
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1372.035 ; gain = 559.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -495,54 +449,41 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1390.426 ; gain = 576.172
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1372.035 ; gain = 559.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1390.426 ; gain = 576.172
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1372.035 ; gain = 559.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1390.426 ; gain = 576.172
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1372.035 ; gain = 559.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1390.426 ; gain = 576.172
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1372.035 ; gain = 559.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1390.426 ; gain = 576.172
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1372.035 ; gain = 559.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1390.426 ; gain = 576.172
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1372.035 ; gain = 559.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
 ---------------------------------------------------------------------------------
-
-DSP Final Report (the ' indicates corresponding REG is set)
-+------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|Module Name | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
-+------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|nes_top     | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|nes_top     | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|nes_top     | PCIN>>17+A*B | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|nes_top     | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|nes_top     | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|nes_top     | PCIN>>17+A*B | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-+------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-
 
 Report BlackBoxes: 
 +------+--------------------------------+----------+
@@ -590,42 +531,41 @@ Report Cell Usage:
 |17    |mb_unit_microblaze_0_axi_intc |     1|
 |18    |mb_unit_rst_clk_wiz_1_100M    |     1|
 |19    |mb_unit_xbar                  |     1|
-|20    |CARRY4                        |    25|
-|21    |DSP48E1                       |     6|
-|22    |LUT1                          |     5|
-|23    |LUT2                          |    92|
-|24    |LUT3                          |    10|
-|25    |LUT4                          |     9|
-|26    |LUT5                          |    35|
-|27    |LUT6                          |    78|
-|28    |FDCE                          |    22|
-|29    |FDRE                          |    17|
-|30    |IBUF                          |     4|
-|31    |OBUF                          |    29|
+|20    |CARRY4                        |     5|
+|21    |LUT1                          |     3|
+|22    |LUT2                          |     6|
+|23    |LUT3                          |     7|
+|24    |LUT4                          |     4|
+|25    |LUT5                          |    26|
+|26    |LUT6                          |    66|
+|27    |FDCE                          |    22|
+|28    |FDRE                          |    18|
+|29    |IBUF                          |     5|
+|30    |OBUF                          |    29|
 +------+------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1390.426 ; gain = 576.172
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1372.035 ; gain = 559.891
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 20 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1390.426 ; gain = 511.645
-Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1390.426 ; gain = 576.172
+Synthesis finished with 0 errors, 0 critical warnings and 35 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 1372.035 ; gain = 513.035
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1372.035 ; gain = 559.891
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1402.457 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 31 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1372.035 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1406.141 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1372.035 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete, checksum: 6948e087
+Synth Design complete, checksum: 8d83a21c
 INFO: [Common 17-83] Releasing license: Synthesis
-108 Infos, 132 Warnings, 1 Critical Warnings and 0 Errors encountered.
+112 Infos, 132 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1406.141 ; gain = 970.379
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1372.035 ; gain = 935.766
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
 INFO: [Common 17-1381] The checkpoint 'C:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.runs/synth_1/nes_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file nes_top_utilization_synth.rpt -pb nes_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Mar 13 10:19:50 2026...
+INFO: [Common 17-206] Exiting Vivado at Fri Apr  3 16:56:58 2026...

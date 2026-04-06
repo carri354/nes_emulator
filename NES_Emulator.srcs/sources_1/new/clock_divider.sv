@@ -7,56 +7,38 @@
 // Module Name: clock_divider
 // Tool Versions: 
 // Description: Generates clock enable signals (NOT CLK SIGNALS)
-//              for NES emulator based on the 21.477MHz master clock
+//              for NES emulator based on the master clock
 //////////////////////////////////////////////////////////////////////////////////
 
 
 module clock_divider(
-input logic clk_21MHz, // 21.477MHz clock
+input logic clk, // Master clock input
 input logic rst,
 output logic cpu_clk_en, // clk / 12
 output logic ppu_clk_en // clk / 4
     );
 
 // Timing based on https://www.nesdev.org/wiki/Cycle_reference_chart
-logic [3:0]cpu_count;
-logic [3:0]cpu_count_next;
+logic [3:0] count;
+logic [3:0] count_next;
 
-logic [1:0]ppu_count;
-logic [1:0]ppu_count_next;
-
-
-
-always_comb
-begin
+always_comb begin
+    if(count == 4'd11) count_next = 4'd0;
+    else count_next = count + 1;
     
-	if (cpu_count == 4'd11)
-		cpu_count_next = 0;
-    else
-        cpu_count_next = cpu_count + 1;
-		
-	if (ppu_count == 2'd3)
-		ppu_count_next = 0;
-	else
-	   ppu_count_next = ppu_count + 1;
-	
-	
-	cpu_clk_en = (cpu_count == 4'd11);
-    ppu_clk_en = (ppu_count == 2'd3);
+    ppu_clk_en = (count == 4'd2) ||
+                 (count == 4'd5) ||
+                 (count == 4'd8) ||
+                 (count == 4'd11);   // triggers every 3 master cycles
+                 
+    cpu_clk_en = (count == 4'd11);   // triggers every 12 master cycles
 end
 
-
-always_ff @(posedge clk_21MHz)
-begin
-    if(rst)begin
-        cpu_count <= 0;
-        ppu_count <= 0;
-    end else begin
-        cpu_count <= cpu_count_next;
-        ppu_count <= ppu_count_next;
-        
-    end
-   
+always_ff @(posedge clk) begin
+    if (rst)
+        count <= 4'd0;
+    else
+        count <= count_next;
 end
     
 

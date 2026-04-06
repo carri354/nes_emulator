@@ -10,6 +10,10 @@ module nes_top(
     input logic Clk,
     input logic reset_rtl_0,
     
+    
+    // SW Input
+    input logic [15:0]sw,
+    
     //USB signals
     input logic [0:0] gpio_usb_int_tri_i,
     output logic gpio_usb_rst_tri_o,
@@ -135,22 +139,8 @@ module nes_top(
     );
 
     
-    /*
-    //Color Mapper Module   
-    assign ballsizesig = 16;
-    assign ballxsig = 20;
-    assign ballysig = 20;
-    color_mapper color_instance(
-        .BallX(ballxsig),
-        .BallY(ballysig),
-        .DrawX(drawX),
-        .DrawY(drawY),
-        .Ball_size(ballsizesig),
-        .Red(red),
-        .Green(green),
-        .Blue(blue)
-    );
-    */
+    
+    
     
     /*
     console nes(
@@ -165,11 +155,18 @@ module nes_top(
         .green(green),
         .blue(blue)
     );
-    
-    cartridge game_cartridge(
-    
-    );
     */
+    cartridge game_cartridge(
+        .clk(Clk),
+        .mapper_sel(sw[0]),
+        .reset(reset_ah),
+        .drawX(drawX),
+        .drawY(drawY),
+        .red(red),
+        .green(green),
+        .blue(blue)
+    );
+    
     
     
     

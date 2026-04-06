@@ -23,6 +23,11 @@
 //-------------------------------------------------------------------------
 
 
+//Changes made to fit NES:
+//    -Resolution is now 512 x 480 which is a 2x scale of the NES 256 x 240 resolution
+//    -To accomodate, a 64 px border is padded to either side (640 - 512 = 128)
+//    -Active horizontal region now starts at 64 and ends at 576
+
 module  vga_controller ( input        pixel_clk,        // 50 MHz clock
                                       reset,            // reset signal
                          output logic hs,               // Horizontal sync pulse.  Active low
@@ -70,8 +75,8 @@ module  vga_controller ( input        pixel_clk,        // 50 MHz clock
 				  hc <= (hc + 1);  //no statement about vc, implied vc <= vc;
 	 end 
    
-    assign drawX = hc;
-    assign drawY = vc;
+    assign drawX = (hc - 64) >> 1; // Modified to match NES
+    assign drawY = vc >> 1;
    
 	 //horizontal sync pulse is 96 pixels long at pixels 656-752
     //(signal is registered to ensure clean output waveform)
@@ -99,11 +104,11 @@ module  vga_controller ( input        pixel_clk,        // 50 MHz clock
 			       vs <= 1'b1;
     end
        
-    //only display pixels between horizontal 0-639 and vertical 0-479 (640x480)
+    //only display pixels between horizontal 64-575 and vertical 0-479 (512x480)
     //(This signal is registered within the DAC chip, so we can leave it as pure combinational logic here)    
     always_comb
     begin 
-        if ( (hc >= 10'b1010000000) | (vc >= 10'b0111100000) ) 
+        if ( (hc >= 10'b1001000000) | (hc < 10'b0001000000) | (vc >= 10'b0111100000) ) 
             display = 1'b0;
         else 
             display = 1'b1;

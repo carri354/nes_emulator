@@ -5,7 +5,7 @@ timeprecision 1ns;
 
 // These signals are internal because the processor will be 
 // instantiated as a submodule in testbench.
-logic       clk_21MHz;
+logic       clk;
 logic       rst; 
 
 
@@ -14,13 +14,38 @@ logic       rst;
 // Instantiating the DUT (Device Under Test)
 // Make sure the module and signal names match with those in your design
 
-logic cpu_clk_en; // clk / 12
-logic ppu_clk_en; // clk / 4
 
-clock_divider c1(.*);
+// TEST CLK DIVIDER
+//logic cpu_clk_en; // clk / 12
+//logic ppu_clk_en; // clk / 4
+
+//clock_divider c1(.*);
+
+
+// TEST VGA CONTROLLER
+logic pixel_clk;        // 50 MHz clock
+logic reset;            // reset signal
+logic hs;               // Horizontal sync pulse.  Active low
+logic vs;               // Vertical sync pulse.  Active low
+logic active_nblank;    // High = active, low = blanking interval
+logic sync;      // Composite Sync signal.  Active low.  We don't use it in this lab,
+									            //   but the video DAC on the DE2 board requires an input for it.
+logic [9:0] drawX;     // horizontal coordinate
+logic [9:0] drawY;   // vertical coordinate
+
+
+logic [9:0] hc;
+logic [9:0] vc;
+
+
+
+vga_controller vga_inst(.*);
+
+assign hc = vga_inst.hc;
+assign vc = vga_inst.vc;
 
 initial begin: CLOCK_INITIALIZATION
-	clk_21MHz = 1'b1;
+	clk = 1'b1;
 end 
 
 // Toggle the clock
@@ -31,7 +56,7 @@ end
 // this is important because we need to know what the time scale is for how long to run
 // the simulation
 always begin : CLOCK_GENERATION
-	#2.328 clk_21MHz = ~clk_21MHz;
+	#2.5 clk = ~clk;
 end
 
 // Testing begins here
@@ -45,13 +70,16 @@ end
 // same simulation timestep. The exception is for reset, which we want to make sure
 // happens first. 
 initial begin: TEST_VECTORS
+    assign pixel_clk = clk;
+    assign reset = rst;    
     rst = 1;
     
-    #1.1
+    #10.1
     
     rst <=0;
     
-    repeat (20) @(posedge clk_21MHz);
+    wait(vs);
+    repeat (2000) @ (posedge clk);
 	
 	
 	$finish(); //this task will end the simulation if the Vivado settings are properly configured
