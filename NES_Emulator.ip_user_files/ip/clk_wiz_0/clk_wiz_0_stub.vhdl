@@ -1,7 +1,7 @@
 -- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
--- Date        : Wed Mar 18 10:58:26 2026
+-- Date        : Tue Apr 14 19:08:37 2026
 -- Host        : LAPTOP-2QU67J4E running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
 --               c:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_stub.vhdl
@@ -16,7 +16,6 @@ entity clk_wiz_0 is
   Port ( 
     clk_out1 : out STD_LOGIC;
     clk_out2 : out STD_LOGIC;
-    clk_out3 : out STD_LOGIC;
     reset : in STD_LOGIC;
     locked : out STD_LOGIC;
     clk_in1 : in STD_LOGIC
@@ -28,6 +27,6 @@ architecture stub of clk_wiz_0 is
 attribute syn_black_box : boolean;
 attribute black_box_pad_pin : string;
 attribute syn_black_box of stub : architecture is true;
-attribute black_box_pad_pin of stub : architecture is "clk_out1,clk_out2,clk_out3,reset,locked,clk_in1";
+attribute black_box_pad_pin of stub : architecture is "clk_out1,clk_out2,reset,locked,clk_in1";
 begin
 end;

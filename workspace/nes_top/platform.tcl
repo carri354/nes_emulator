@@ -22,3 +22,10 @@ platform active {nes_top}
 platform config -updatehw {C:/Users/carri/ECE_385/NES_Emulator/nes_top.xsa}
 platform clean
 platform generate
+platform active {nes_top}
+platform config -updatehw {C:/Users/carri/ECE_385/NES_Emulator/nes_top.xsa}
+platform clean
+platform generate
+platform config -updatehw {C:/Users/carri/ECE_385/NES_Emulator/nes_top.xsa}
+platform clean
+platform generate

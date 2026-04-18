@@ -16,33 +16,72 @@ logic       rst;
 
 
 // TEST CLK DIVIDER
-//logic cpu_clk_en; // clk / 12
-//logic ppu_clk_en; // clk / 4
+// logic cpu_clk_en; // clk / 12
+// logic ppu_clk_en; // clk / 4
 
-//clock_divider c1(.*);
-
-
-// TEST VGA CONTROLLER
-logic pixel_clk;        // 50 MHz clock
-logic reset;            // reset signal
-logic hs;               // Horizontal sync pulse.  Active low
-logic vs;               // Vertical sync pulse.  Active low
-logic active_nblank;    // High = active, low = blanking interval
-logic sync;      // Composite Sync signal.  Active low.  We don't use it in this lab,
-									            //   but the video DAC on the DE2 board requires an input for it.
-logic [9:0] drawX;     // horizontal coordinate
-logic [9:0] drawY;   // vertical coordinate
+// clock_divider c1(.*);
 
 
-logic [9:0] hc;
-logic [9:0] vc;
+// // TEST VGA CONTROLLER
+// logic pixel_clk;        // 50 MHz clock
+// logic reset;            // reset signal
+// logic hs;               // Horizontal sync pulse.  Active low
+// logic vs;               // Vertical sync pulse.  Active low
+// logic active_nblank;    // High = active, low = blanking interval
+// logic sync;      // Composite Sync signal.  Active low.  We don't use it in this lab,
+// 									            //   but the video DAC on the DE2 board requires an input for it.
+// logic [9:0] drawX;     // horizontal coordinate
+// logic [9:0] drawY;   // vertical coordinate
+// logic [9:0] hc;
+// logic [9:0] vc;
+
+// vga_controller vga_inst(.*);
+
+// assign hc = vga_inst.hc;
+// assign vc = vga_inst.vc;
 
 
 
-vga_controller vga_inst(.*);
+// TEST CPU
 
-assign hc = vga_inst.hc;
-assign vc = vga_inst.vc;
+
+    
+    
+    // SW Input
+logic Clk;
+logic reset_rtl_0;
+
+// SW Input
+logic [15:0] sw;
+
+//USB signals
+logic [0:0] gpio_usb_int_tri_i;
+logic gpio_usb_rst_tri_o;
+logic usb_spi_miso;
+logic usb_spi_mosi;
+logic usb_spi_sclk;
+logic usb_spi_ss;
+
+//UART
+logic uart_rtl_0_rxd;
+logic uart_rtl_0_txd;
+
+//HDMI
+logic hdmi_tmds_clk_n;
+logic hdmi_tmds_clk_p;
+logic [2:0] hdmi_tmds_data_n;
+logic [2:0] hdmi_tmds_data_p;
+
+//HEX displays
+logic [7:0] hex_segA;
+logic [3:0] hex_gridA;
+logic [7:0] hex_segB;
+logic [3:0] hex_gridB;
+
+assign Clk = clk;
+assign reset_rtl_0 = rst;
+
+nes_top nes_top_inst(.*);
 
 initial begin: CLOCK_INITIALIZATION
 	clk = 1'b1;
@@ -56,7 +95,8 @@ end
 // this is important because we need to know what the time scale is for how long to run
 // the simulation
 always begin : CLOCK_GENERATION
-	#2.5 clk = ~clk;
+	//#2.5 clk = ~clk;
+    #0.5 clk = ~clk;
 end
 
 // Testing begins here
@@ -70,18 +110,16 @@ end
 // same simulation timestep. The exception is for reset, which we want to make sure
 // happens first. 
 initial begin: TEST_VECTORS
-    assign pixel_clk = clk;
-    assign reset = rst;    
+    
     rst = 1;
-    
     #10.1
-    
-    rst <=0;
-    
-    wait(vs);
-    repeat (2000) @ (posedge clk);
-	
-	
+    rst = 0;
+
+
+
+    repeat(16000) @ (posedge clk)
+    $display(nes_top_inst.cpu_inst.PC);
+
 	$finish(); //this task will end the simulation if the Vivado settings are properly configured
 
 end

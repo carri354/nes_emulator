@@ -1,4 +1,4 @@
-14:03:26 **** Incremental Build of configuration Debug for project NES_emulator ****
+22:41:02 **** Build of configuration Debug for project NES_emulator ****
 make all 
 'Building file: ../src/lw_usb/HID.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -79,9 +79,9 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/carri/ECE_385/NES_Emulator/worksp
 'Invoking: MicroBlaze Print Size'
 mb-size NES_emulator.elf  |tee "NES_emulator.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  24268	    488	   3676	  28432	   6f10	NES_emulator.elf
+  24476	    416	   3676	  28568	   6f98	NES_emulator.elf
 'Finished building: NES_emulator.elf.size'
 ' '
 
-14:03:30 Build Finished (took 3s.716ms)
+22:41:03 Build Finished (took 1s.374ms)
 

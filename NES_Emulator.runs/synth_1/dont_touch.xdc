@@ -6,24 +6,6 @@
 # Block Designs: bd/mb_unit/mb_unit.bd
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_unit || ORIG_REF_NAME==mb_unit} -quiet] -quiet
 
-# IP: bd/mb_unit/ip/mb_unit_microblaze_0_0/mb_unit_microblaze_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_unit_microblaze_0_0 || ORIG_REF_NAME==mb_unit_microblaze_0_0} -quiet] -quiet
-
-# IP: bd/mb_unit/ip/mb_unit_dlmb_v10_0/mb_unit_dlmb_v10_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_unit_dlmb_v10_0 || ORIG_REF_NAME==mb_unit_dlmb_v10_0} -quiet] -quiet
-
-# IP: bd/mb_unit/ip/mb_unit_ilmb_v10_0/mb_unit_ilmb_v10_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_unit_ilmb_v10_0 || ORIG_REF_NAME==mb_unit_ilmb_v10_0} -quiet] -quiet
-
-# IP: bd/mb_unit/ip/mb_unit_dlmb_bram_if_cntlr_0/mb_unit_dlmb_bram_if_cntlr_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_unit_dlmb_bram_if_cntlr_0 || ORIG_REF_NAME==mb_unit_dlmb_bram_if_cntlr_0} -quiet] -quiet
-
-# IP: bd/mb_unit/ip/mb_unit_ilmb_bram_if_cntlr_0/mb_unit_ilmb_bram_if_cntlr_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_unit_ilmb_bram_if_cntlr_0 || ORIG_REF_NAME==mb_unit_ilmb_bram_if_cntlr_0} -quiet] -quiet
-
-# IP: bd/mb_unit/ip/mb_unit_lmb_bram_0/mb_unit_lmb_bram_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_unit_lmb_bram_0 || ORIG_REF_NAME==mb_unit_lmb_bram_0} -quiet] -quiet
-
 # IP: bd/mb_unit/ip/mb_unit_xbar_0/mb_unit_xbar_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_unit_xbar_0 || ORIG_REF_NAME==mb_unit_xbar_0} -quiet] -quiet
 
@@ -62,5 +44,23 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_unit_axi
 
 # IP: bd/mb_unit/ip/mb_unit_axi_timer_0_0/mb_unit_axi_timer_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_unit_axi_timer_0_0 || ORIG_REF_NAME==mb_unit_axi_timer_0_0} -quiet] -quiet
+
+# IP: bd/mb_unit/ip/mb_unit_microblaze_0_3/mb_unit_microblaze_0_3.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_unit_microblaze_0_3 || ORIG_REF_NAME==mb_unit_microblaze_0_3} -quiet] -quiet
+
+# IP: bd/mb_unit/ip/mb_unit_dlmb_v10_1/mb_unit_dlmb_v10_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_unit_dlmb_v10_1 || ORIG_REF_NAME==mb_unit_dlmb_v10_1} -quiet] -quiet
+
+# IP: bd/mb_unit/ip/mb_unit_ilmb_v10_1/mb_unit_ilmb_v10_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_unit_ilmb_v10_1 || ORIG_REF_NAME==mb_unit_ilmb_v10_1} -quiet] -quiet
+
+# IP: bd/mb_unit/ip/mb_unit_dlmb_bram_if_cntlr_1/mb_unit_dlmb_bram_if_cntlr_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_unit_dlmb_bram_if_cntlr_1 || ORIG_REF_NAME==mb_unit_dlmb_bram_if_cntlr_1} -quiet] -quiet
+
+# IP: bd/mb_unit/ip/mb_unit_ilmb_bram_if_cntlr_1/mb_unit_ilmb_bram_if_cntlr_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_unit_ilmb_bram_if_cntlr_1 || ORIG_REF_NAME==mb_unit_ilmb_bram_if_cntlr_1} -quiet] -quiet
+
+# IP: bd/mb_unit/ip/mb_unit_lmb_bram_1/mb_unit_lmb_bram_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_unit_lmb_bram_1 || ORIG_REF_NAME==mb_unit_lmb_bram_1} -quiet] -quiet
 
 # XDC: c:/Users/carri/ECE_385/NES_Emulator/NES_Emulator.gen/sources_1/bd/mb_unit/mb_unit_ooc.xdc

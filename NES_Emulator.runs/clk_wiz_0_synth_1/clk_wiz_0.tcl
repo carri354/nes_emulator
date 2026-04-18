@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "clk_wiz_0_synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 6
 set_msg_config  -id {Synth 8-87}  -new_severity {ERROR} 
 set_msg_config  -id {Synth 8-327}  -new_severity {ERROR} 
 set_param project.vivado.isBlockSynthRun true

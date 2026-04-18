@@ -6,20 +6,26 @@
       <db_ref path="testbench_behav.wdb" id="1">
          <top_modules>
             <top_module name="glbl" />
+            <top_module name="ipif_pkg" />
+            <top_module name="lib_pkg" />
+            <top_module name="lmb_bram_if_funcs" />
+            <top_module name="mdm_funcs" />
+            <top_module name="tc_types" />
             <top_module name="testbench" />
+            <top_module name="vcomponents" />
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0.000000 us"></ZoomStartTime>
-      <ZoomEndTime time="100.150001 us"></ZoomEndTime>
-      <Cursor1Time time="100.150000 us"></Cursor1Time>
+      <ZoomEndTime time="3.913424 us"></ZoomEndTime>
+      <Cursor1Time time="1.760000 us"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="404"></NameColumnWidth>
-      <ValueColumnWidth column_width="190"></ValueColumnWidth>
+      <ValueColumnWidth column_width="166"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="12" />
+   <WVObjectSize size="149" />
    <wvobject fp_name="/testbench/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -28,48 +34,598 @@
       <obj_property name="ElementShortName">rst</obj_property>
       <obj_property name="ObjectShortName">rst</obj_property>
    </wvobject>
-   <wvobject fp_name="/testbench/pixel_clk" type="logic">
-      <obj_property name="ElementShortName">pixel_clk</obj_property>
-      <obj_property name="ObjectShortName">pixel_clk</obj_property>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
    </wvobject>
-   <wvobject fp_name="/testbench/reset" type="logic">
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/reset" type="logic">
       <obj_property name="ElementShortName">reset</obj_property>
       <obj_property name="ObjectShortName">reset</obj_property>
    </wvobject>
-   <wvobject fp_name="/testbench/hs" type="logic">
-      <obj_property name="ElementShortName">hs</obj_property>
-      <obj_property name="ObjectShortName">hs</obj_property>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/AB" type="array">
+      <obj_property name="ElementShortName">AB[15:0]</obj_property>
+      <obj_property name="ObjectShortName">AB[15:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/testbench/vs" type="logic">
-      <obj_property name="ElementShortName">vs</obj_property>
-      <obj_property name="ObjectShortName">vs</obj_property>
+   <wvobject fp_name="/testbench/nes_top_inst/game_mapper0/prg_rom/ena" type="logic">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">ena</obj_property>
+      <obj_property name="ObjectShortName">ena</obj_property>
+      <obj_property name="label">prg_ena</obj_property>
    </wvobject>
-   <wvobject fp_name="/testbench/active_nblank" type="logic">
-      <obj_property name="ElementShortName">active_nblank</obj_property>
-      <obj_property name="ObjectShortName">active_nblank</obj_property>
+   <wvobject fp_name="/testbench/nes_top_inst/game_mapper0/prg_rom/addra" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">addra[13:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[13:0]</obj_property>
+      <obj_property name="label">prg_addra[13:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/testbench/sync" type="logic">
-      <obj_property name="ElementShortName">sync</obj_property>
-      <obj_property name="ObjectShortName">sync</obj_property>
+   <wvobject fp_name="/testbench/nes_top_inst/game_mapper0/prg_rom/douta" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">douta[7:0]</obj_property>
+      <obj_property name="ObjectShortName">douta[7:0]</obj_property>
+      <obj_property name="label">prg_douta[7:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/testbench/drawX" type="array">
-      <obj_property name="ElementShortName">drawX[9:0]</obj_property>
-      <obj_property name="ObjectShortName">drawX[9:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   <wvobject fp_name="/testbench/nes_top_inst/game_mapper0/cpu_data_out" type="array">
+      <obj_property name="ElementShortName">cpu_data_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">cpu_data_out[7:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/testbench/drawY" type="array">
-      <obj_property name="ElementShortName">drawY[9:0]</obj_property>
-      <obj_property name="ObjectShortName">drawY[9:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/IRQ" type="logic">
+      <obj_property name="ElementShortName">IRQ</obj_property>
+      <obj_property name="ObjectShortName">IRQ</obj_property>
    </wvobject>
-   <wvobject fp_name="/testbench/hc" type="array">
-      <obj_property name="ElementShortName">hc[9:0]</obj_property>
-      <obj_property name="ObjectShortName">hc[9:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/NMI" type="logic">
+      <obj_property name="ElementShortName">NMI</obj_property>
+      <obj_property name="ObjectShortName">NMI</obj_property>
    </wvobject>
-   <wvobject fp_name="/testbench/vc" type="array">
-      <obj_property name="ElementShortName">vc[9:0]</obj_property>
-      <obj_property name="ObjectShortName">vc[9:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/RDY" type="logic">
+      <obj_property name="ElementShortName">RDY</obj_property>
+      <obj_property name="ObjectShortName">RDY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/PC" type="array">
+      <obj_property name="ElementShortName">PC[15:0]</obj_property>
+      <obj_property name="ObjectShortName">PC[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/IR" type="array">
+      <obj_property name="ElementShortName">IR[7:0]</obj_property>
+      <obj_property name="ObjectShortName">IR[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/ABL" type="array">
+      <obj_property name="ElementShortName">ABL[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ABL[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/ABH" type="array">
+      <obj_property name="ElementShortName">ABH[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ABH[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/ADD" type="array">
+      <obj_property name="ElementShortName">ADD[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ADD[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/DIHOLD" type="array">
+      <obj_property name="ElementShortName">DIHOLD[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DIHOLD[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/DIHOLD_valid" type="logic">
+      <obj_property name="ElementShortName">DIHOLD_valid</obj_property>
+      <obj_property name="ObjectShortName">DIHOLD_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/DIMUX" type="array">
+      <obj_property name="ElementShortName">DIMUX[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DIMUX[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/IRHOLD" type="array">
+      <obj_property name="ElementShortName">IRHOLD[7:0]</obj_property>
+      <obj_property name="ObjectShortName">IRHOLD[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/IRHOLD_valid" type="logic">
+      <obj_property name="ElementShortName">IRHOLD_valid</obj_property>
+      <obj_property name="ObjectShortName">IRHOLD_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/AXYS" type="array">
+      <obj_property name="ElementShortName">AXYS[3:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">AXYS[3:0][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/C" type="logic">
+      <obj_property name="ElementShortName">C</obj_property>
+      <obj_property name="ObjectShortName">C</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/Z" type="logic">
+      <obj_property name="ElementShortName">Z</obj_property>
+      <obj_property name="ObjectShortName">Z</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/I" type="logic">
+      <obj_property name="ElementShortName">I</obj_property>
+      <obj_property name="ObjectShortName">I</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/D" type="logic">
+      <obj_property name="ElementShortName">D</obj_property>
+      <obj_property name="ObjectShortName">D</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/V" type="logic">
+      <obj_property name="ElementShortName">V</obj_property>
+      <obj_property name="ObjectShortName">V</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/N" type="logic">
+      <obj_property name="ElementShortName">N</obj_property>
+      <obj_property name="ObjectShortName">N</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/AZ" type="logic">
+      <obj_property name="ElementShortName">AZ</obj_property>
+      <obj_property name="ObjectShortName">AZ</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/AV" type="logic">
+      <obj_property name="ElementShortName">AV</obj_property>
+      <obj_property name="ObjectShortName">AV</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/AN" type="logic">
+      <obj_property name="ElementShortName">AN</obj_property>
+      <obj_property name="ObjectShortName">AN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/HC" type="logic">
+      <obj_property name="ElementShortName">HC</obj_property>
+      <obj_property name="ObjectShortName">HC</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/AI" type="array">
+      <obj_property name="ElementShortName">AI[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AI[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/BI" type="array">
+      <obj_property name="ElementShortName">BI[7:0]</obj_property>
+      <obj_property name="ObjectShortName">BI[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/DI" type="array">
+      <obj_property name="ElementShortName">DI[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DI[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/DO" type="array">
+      <obj_property name="ElementShortName">DO[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DO[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/WE" type="logic">
+      <obj_property name="ElementShortName">WE</obj_property>
+      <obj_property name="ObjectShortName">WE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/CI" type="logic">
+      <obj_property name="ElementShortName">CI</obj_property>
+      <obj_property name="ObjectShortName">CI</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/CO" type="logic">
+      <obj_property name="ElementShortName">CO</obj_property>
+      <obj_property name="ObjectShortName">CO</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/PCH" type="array">
+      <obj_property name="ElementShortName">PCH[7:0]</obj_property>
+      <obj_property name="ObjectShortName">PCH[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/PCL" type="array">
+      <obj_property name="ElementShortName">PCL[7:0]</obj_property>
+      <obj_property name="ObjectShortName">PCL[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/NMI_edge" type="logic">
+      <obj_property name="ElementShortName">NMI_edge</obj_property>
+      <obj_property name="ObjectShortName">NMI_edge</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/regsel" type="array">
+      <obj_property name="ElementShortName">regsel[1:0]</obj_property>
+      <obj_property name="ObjectShortName">regsel[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/regfile" type="array">
+      <obj_property name="ElementShortName">regfile[7:0]</obj_property>
+      <obj_property name="ObjectShortName">regfile[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/P" type="array">
+      <obj_property name="ElementShortName">P[7:0]</obj_property>
+      <obj_property name="ObjectShortName">P[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/state" type="array">
+      <obj_property name="ElementShortName">state[5:0]</obj_property>
+      <obj_property name="ObjectShortName">state[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/PC_inc" type="logic">
+      <obj_property name="ElementShortName">PC_inc</obj_property>
+      <obj_property name="ObjectShortName">PC_inc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/PC_temp" type="array">
+      <obj_property name="ElementShortName">PC_temp[15:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_temp[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/src_reg" type="array">
+      <obj_property name="ElementShortName">src_reg[1:0]</obj_property>
+      <obj_property name="ObjectShortName">src_reg[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/dst_reg" type="array">
+      <obj_property name="ElementShortName">dst_reg[1:0]</obj_property>
+      <obj_property name="ObjectShortName">dst_reg[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/index_y" type="logic">
+      <obj_property name="ElementShortName">index_y</obj_property>
+      <obj_property name="ObjectShortName">index_y</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/load_reg" type="logic">
+      <obj_property name="ElementShortName">load_reg</obj_property>
+      <obj_property name="ObjectShortName">load_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/inc" type="logic">
+      <obj_property name="ElementShortName">inc</obj_property>
+      <obj_property name="ObjectShortName">inc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/write_back" type="logic">
+      <obj_property name="ElementShortName">write_back</obj_property>
+      <obj_property name="ObjectShortName">write_back</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/load_only" type="logic">
+      <obj_property name="ElementShortName">load_only</obj_property>
+      <obj_property name="ObjectShortName">load_only</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/store" type="logic">
+      <obj_property name="ElementShortName">store</obj_property>
+      <obj_property name="ObjectShortName">store</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/adc_sbc" type="logic">
+      <obj_property name="ElementShortName">adc_sbc</obj_property>
+      <obj_property name="ObjectShortName">adc_sbc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/compare" type="logic">
+      <obj_property name="ElementShortName">compare</obj_property>
+      <obj_property name="ObjectShortName">compare</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/shift" type="logic">
+      <obj_property name="ElementShortName">shift</obj_property>
+      <obj_property name="ObjectShortName">shift</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/rotate" type="logic">
+      <obj_property name="ElementShortName">rotate</obj_property>
+      <obj_property name="ObjectShortName">rotate</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/backwards" type="logic">
+      <obj_property name="ElementShortName">backwards</obj_property>
+      <obj_property name="ObjectShortName">backwards</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/cond_true" type="logic">
+      <obj_property name="ElementShortName">cond_true</obj_property>
+      <obj_property name="ObjectShortName">cond_true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/cond_code" type="array">
+      <obj_property name="ElementShortName">cond_code[2:0]</obj_property>
+      <obj_property name="ObjectShortName">cond_code[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/shift_right" type="logic">
+      <obj_property name="ElementShortName">shift_right</obj_property>
+      <obj_property name="ObjectShortName">shift_right</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/alu_shift_right" type="logic">
+      <obj_property name="ElementShortName">alu_shift_right</obj_property>
+      <obj_property name="ObjectShortName">alu_shift_right</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/op" type="array">
+      <obj_property name="ElementShortName">op[3:0]</obj_property>
+      <obj_property name="ObjectShortName">op[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/alu_op" type="array">
+      <obj_property name="ElementShortName">alu_op[3:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_op[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/adc_bcd" type="logic">
+      <obj_property name="ElementShortName">adc_bcd</obj_property>
+      <obj_property name="ObjectShortName">adc_bcd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/adj_bcd" type="logic">
+      <obj_property name="ElementShortName">adj_bcd</obj_property>
+      <obj_property name="ObjectShortName">adj_bcd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/bit_ins" type="logic">
+      <obj_property name="ElementShortName">bit_ins</obj_property>
+      <obj_property name="ObjectShortName">bit_ins</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/plp" type="logic">
+      <obj_property name="ElementShortName">plp</obj_property>
+      <obj_property name="ObjectShortName">plp</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/php" type="logic">
+      <obj_property name="ElementShortName">php</obj_property>
+      <obj_property name="ObjectShortName">php</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/clc" type="logic">
+      <obj_property name="ElementShortName">clc</obj_property>
+      <obj_property name="ObjectShortName">clc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/sec" type="logic">
+      <obj_property name="ElementShortName">sec</obj_property>
+      <obj_property name="ObjectShortName">sec</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/cld" type="logic">
+      <obj_property name="ElementShortName">cld</obj_property>
+      <obj_property name="ObjectShortName">cld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/sed" type="logic">
+      <obj_property name="ElementShortName">sed</obj_property>
+      <obj_property name="ObjectShortName">sed</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/cli" type="logic">
+      <obj_property name="ElementShortName">cli</obj_property>
+      <obj_property name="ObjectShortName">cli</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/sei" type="logic">
+      <obj_property name="ElementShortName">sei</obj_property>
+      <obj_property name="ObjectShortName">sei</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/clv" type="logic">
+      <obj_property name="ElementShortName">clv</obj_property>
+      <obj_property name="ObjectShortName">clv</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/brk" type="logic">
+      <obj_property name="ElementShortName">brk</obj_property>
+      <obj_property name="ObjectShortName">brk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/res" type="logic">
+      <obj_property name="ElementShortName">res</obj_property>
+      <obj_property name="ObjectShortName">res</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/write_register" type="logic">
+      <obj_property name="ElementShortName">write_register</obj_property>
+      <obj_property name="ObjectShortName">write_register</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/ADJL" type="array">
+      <obj_property name="ElementShortName">ADJL[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ADJL[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/ADJH" type="array">
+      <obj_property name="ElementShortName">ADJH[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ADJH[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/NMI_1" type="logic">
+      <obj_property name="ElementShortName">NMI_1</obj_property>
+      <obj_property name="ObjectShortName">NMI_1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/SEL_A" type="array">
+      <obj_property name="ElementShortName">SEL_A[1:0]</obj_property>
+      <obj_property name="ObjectShortName">SEL_A[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/SEL_S" type="array">
+      <obj_property name="ElementShortName">SEL_S[1:0]</obj_property>
+      <obj_property name="ObjectShortName">SEL_S[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/SEL_X" type="array">
+      <obj_property name="ElementShortName">SEL_X[1:0]</obj_property>
+      <obj_property name="ObjectShortName">SEL_X[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/SEL_Y" type="array">
+      <obj_property name="ElementShortName">SEL_Y[1:0]</obj_property>
+      <obj_property name="ObjectShortName">SEL_Y[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/OP_OR" type="array">
+      <obj_property name="ElementShortName">OP_OR[3:0]</obj_property>
+      <obj_property name="ObjectShortName">OP_OR[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/OP_AND" type="array">
+      <obj_property name="ElementShortName">OP_AND[3:0]</obj_property>
+      <obj_property name="ObjectShortName">OP_AND[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/OP_EOR" type="array">
+      <obj_property name="ElementShortName">OP_EOR[3:0]</obj_property>
+      <obj_property name="ObjectShortName">OP_EOR[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/OP_ADD" type="array">
+      <obj_property name="ElementShortName">OP_ADD[3:0]</obj_property>
+      <obj_property name="ObjectShortName">OP_ADD[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/OP_SUB" type="array">
+      <obj_property name="ElementShortName">OP_SUB[3:0]</obj_property>
+      <obj_property name="ObjectShortName">OP_SUB[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/OP_ROL" type="array">
+      <obj_property name="ElementShortName">OP_ROL[3:0]</obj_property>
+      <obj_property name="ObjectShortName">OP_ROL[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/OP_A" type="array">
+      <obj_property name="ElementShortName">OP_A[3:0]</obj_property>
+      <obj_property name="ObjectShortName">OP_A[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/ABS0" type="array">
+      <obj_property name="ElementShortName">ABS0[5:0]</obj_property>
+      <obj_property name="ObjectShortName">ABS0[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/ABS1" type="array">
+      <obj_property name="ElementShortName">ABS1[5:0]</obj_property>
+      <obj_property name="ObjectShortName">ABS1[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/ABSX0" type="array">
+      <obj_property name="ElementShortName">ABSX0[5:0]</obj_property>
+      <obj_property name="ObjectShortName">ABSX0[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/ABSX1" type="array">
+      <obj_property name="ElementShortName">ABSX1[5:0]</obj_property>
+      <obj_property name="ObjectShortName">ABSX1[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/ABSX2" type="array">
+      <obj_property name="ElementShortName">ABSX2[5:0]</obj_property>
+      <obj_property name="ObjectShortName">ABSX2[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/BRA0" type="array">
+      <obj_property name="ElementShortName">BRA0[5:0]</obj_property>
+      <obj_property name="ObjectShortName">BRA0[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/BRA1" type="array">
+      <obj_property name="ElementShortName">BRA1[5:0]</obj_property>
+      <obj_property name="ObjectShortName">BRA1[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/BRA2" type="array">
+      <obj_property name="ElementShortName">BRA2[5:0]</obj_property>
+      <obj_property name="ObjectShortName">BRA2[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/BRK0" type="array">
+      <obj_property name="ElementShortName">BRK0[5:0]</obj_property>
+      <obj_property name="ObjectShortName">BRK0[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/BRK1" type="array">
+      <obj_property name="ElementShortName">BRK1[5:0]</obj_property>
+      <obj_property name="ObjectShortName">BRK1[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/BRK2" type="array">
+      <obj_property name="ElementShortName">BRK2[5:0]</obj_property>
+      <obj_property name="ObjectShortName">BRK2[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/BRK3" type="array">
+      <obj_property name="ElementShortName">BRK3[5:0]</obj_property>
+      <obj_property name="ObjectShortName">BRK3[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/DECODE" type="array">
+      <obj_property name="ElementShortName">DECODE[5:0]</obj_property>
+      <obj_property name="ObjectShortName">DECODE[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/FETCH" type="array">
+      <obj_property name="ElementShortName">FETCH[5:0]</obj_property>
+      <obj_property name="ObjectShortName">FETCH[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/INDX0" type="array">
+      <obj_property name="ElementShortName">INDX0[5:0]</obj_property>
+      <obj_property name="ObjectShortName">INDX0[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/INDX1" type="array">
+      <obj_property name="ElementShortName">INDX1[5:0]</obj_property>
+      <obj_property name="ObjectShortName">INDX1[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/INDX2" type="array">
+      <obj_property name="ElementShortName">INDX2[5:0]</obj_property>
+      <obj_property name="ObjectShortName">INDX2[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/INDX3" type="array">
+      <obj_property name="ElementShortName">INDX3[5:0]</obj_property>
+      <obj_property name="ObjectShortName">INDX3[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/INDY0" type="array">
+      <obj_property name="ElementShortName">INDY0[5:0]</obj_property>
+      <obj_property name="ObjectShortName">INDY0[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/INDY1" type="array">
+      <obj_property name="ElementShortName">INDY1[5:0]</obj_property>
+      <obj_property name="ObjectShortName">INDY1[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/INDY2" type="array">
+      <obj_property name="ElementShortName">INDY2[5:0]</obj_property>
+      <obj_property name="ObjectShortName">INDY2[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/INDY3" type="array">
+      <obj_property name="ElementShortName">INDY3[5:0]</obj_property>
+      <obj_property name="ObjectShortName">INDY3[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/JMP0" type="array">
+      <obj_property name="ElementShortName">JMP0[5:0]</obj_property>
+      <obj_property name="ObjectShortName">JMP0[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/JMP1" type="array">
+      <obj_property name="ElementShortName">JMP1[5:0]</obj_property>
+      <obj_property name="ObjectShortName">JMP1[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/JMPI0" type="array">
+      <obj_property name="ElementShortName">JMPI0[5:0]</obj_property>
+      <obj_property name="ObjectShortName">JMPI0[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/JMPI1" type="array">
+      <obj_property name="ElementShortName">JMPI1[5:0]</obj_property>
+      <obj_property name="ObjectShortName">JMPI1[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/JSR0" type="array">
+      <obj_property name="ElementShortName">JSR0[5:0]</obj_property>
+      <obj_property name="ObjectShortName">JSR0[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/JSR1" type="array">
+      <obj_property name="ElementShortName">JSR1[5:0]</obj_property>
+      <obj_property name="ObjectShortName">JSR1[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/JSR2" type="array">
+      <obj_property name="ElementShortName">JSR2[5:0]</obj_property>
+      <obj_property name="ObjectShortName">JSR2[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/JSR3" type="array">
+      <obj_property name="ElementShortName">JSR3[5:0]</obj_property>
+      <obj_property name="ObjectShortName">JSR3[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/PULL0" type="array">
+      <obj_property name="ElementShortName">PULL0[5:0]</obj_property>
+      <obj_property name="ObjectShortName">PULL0[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/PULL1" type="array">
+      <obj_property name="ElementShortName">PULL1[5:0]</obj_property>
+      <obj_property name="ObjectShortName">PULL1[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/PULL2" type="array">
+      <obj_property name="ElementShortName">PULL2[5:0]</obj_property>
+      <obj_property name="ObjectShortName">PULL2[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/PUSH0" type="array">
+      <obj_property name="ElementShortName">PUSH0[5:0]</obj_property>
+      <obj_property name="ObjectShortName">PUSH0[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/PUSH1" type="array">
+      <obj_property name="ElementShortName">PUSH1[5:0]</obj_property>
+      <obj_property name="ObjectShortName">PUSH1[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/READ" type="array">
+      <obj_property name="ElementShortName">READ[5:0]</obj_property>
+      <obj_property name="ObjectShortName">READ[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/REG" type="array">
+      <obj_property name="ElementShortName">REG[5:0]</obj_property>
+      <obj_property name="ObjectShortName">REG[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/RTI0" type="array">
+      <obj_property name="ElementShortName">RTI0[5:0]</obj_property>
+      <obj_property name="ObjectShortName">RTI0[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/RTI1" type="array">
+      <obj_property name="ElementShortName">RTI1[5:0]</obj_property>
+      <obj_property name="ObjectShortName">RTI1[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/RTI2" type="array">
+      <obj_property name="ElementShortName">RTI2[5:0]</obj_property>
+      <obj_property name="ObjectShortName">RTI2[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/RTI3" type="array">
+      <obj_property name="ElementShortName">RTI3[5:0]</obj_property>
+      <obj_property name="ObjectShortName">RTI3[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/RTI4" type="array">
+      <obj_property name="ElementShortName">RTI4[5:0]</obj_property>
+      <obj_property name="ObjectShortName">RTI4[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/RTS0" type="array">
+      <obj_property name="ElementShortName">RTS0[5:0]</obj_property>
+      <obj_property name="ObjectShortName">RTS0[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/RTS1" type="array">
+      <obj_property name="ElementShortName">RTS1[5:0]</obj_property>
+      <obj_property name="ObjectShortName">RTS1[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/RTS2" type="array">
+      <obj_property name="ElementShortName">RTS2[5:0]</obj_property>
+      <obj_property name="ObjectShortName">RTS2[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/RTS3" type="array">
+      <obj_property name="ElementShortName">RTS3[5:0]</obj_property>
+      <obj_property name="ObjectShortName">RTS3[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/WRITE" type="array">
+      <obj_property name="ElementShortName">WRITE[5:0]</obj_property>
+      <obj_property name="ObjectShortName">WRITE[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/ZP0" type="array">
+      <obj_property name="ElementShortName">ZP0[5:0]</obj_property>
+      <obj_property name="ObjectShortName">ZP0[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/ZPX0" type="array">
+      <obj_property name="ElementShortName">ZPX0[5:0]</obj_property>
+      <obj_property name="ObjectShortName">ZPX0[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/ZPX1" type="array">
+      <obj_property name="ElementShortName">ZPX1[5:0]</obj_property>
+      <obj_property name="ObjectShortName">ZPX1[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/ZEROPAGE" type="array">
+      <obj_property name="ElementShortName">ZEROPAGE[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ZEROPAGE[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nes_top_inst/cpu_inst/STACKPAGE" type="array">
+      <obj_property name="ElementShortName">STACKPAGE[7:0]</obj_property>
+      <obj_property name="ObjectShortName">STACKPAGE[7:0]</obj_property>
    </wvobject>
 </wave_config>
