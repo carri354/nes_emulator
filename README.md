@@ -1,5 +1,5 @@
 # NES Emulator on Real Digital Urbana Board FPGA
-- Note: The final implementation is no longer stored on this repository to protect against plaigiarism
+- Note: The final implementation is no longer stored on this repository to protect against plagiarism. The current files represent only a rough sketch
 
 ## SECOND PLACE
 Our project received 2nd place in the ECE 385 Final Project Showcase, video <a href = "https://www.youtube.com/watch?v=iHTvJDg6JQU&t=2018s">here</a>
